@@ -3,7 +3,7 @@ MAINTAINER Robert Brown - https://github.com/rjbrown99
 
 # Derived from: https://github.com/kost/docker-alpine/tree/master/alpine-mariadb
 
-RUN apk --update add mysql mysql-client pwgen && \
+RUN apk --update add mariadb mariadb-client pwgen && \
 rm -f /var/cache/apk/* && \
 echo "Success"
 
